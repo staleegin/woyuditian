@@ -4,38 +4,35 @@ layout: home
 hero:
   name: 我与地坛
   text: 史铁生作品集
-  tagline: 根据你提供的完整版电子文本整理为在线阅读版本
+  tagline: 在时间与记忆之间，重新阅读那些关于生命的文字。
   actions:
     - theme: brand
       text: 开始阅读
       link: /chapters/01
     - theme: alt
-      text: 阅读目录
+      text: 查看目录
       link: /chapters/01
 
 features:
-  - icon: 📖
+  - icon: '01'
     title: 在线阅读
-    details: 采用适合中文长文阅读的书卷式排版，电脑与手机均可阅读。
-  - icon: 🌙
-    title: 深色模式
-    details: 支持浅色 / 深色外观切换，夜间阅读更加舒适。
-  - icon: 🧭
-    title: 全书目录
-    details: 按你提供的完整版目录整理为连续章节，支持上一章 / 下一章导航。
+    details: 从第一章开始，沿着文字缓慢进入史铁生的精神世界。
+  - icon: '02'
+    title: 章节目录
+    details: 十二篇作品连续整理，支持章节间顺畅切换。
+  - icon: '03'
+    title: 安静阅读
+    details: 低干扰的排版与深色模式，让阅读回到文字本身。
 ---
 
-<div class="book-intro">
+<section class="home-intro" aria-label="作品简介">
+  <div class="home-intro__label">ABOUT THIS BOOK</div>
+  <div class="home-intro__body">
+    <h2>在地坛与岁月之间，<br />看见生命的回声。</h2>
+    <p>本站收录《我与地坛》及史铁生相关作品，整理为适合长时间阅读的在线版本。愿每一次翻页，都能留下片刻安静。</p>
+  </div>
+</section>
 
-> 本站正文根据你提供的完整版电子文本重新整理，已替换原先不完整的正文。
+<div class="home-rule"></div>
 
-</div>
-
-<style>
-.book-intro {
-  max-width: 760px;
-  margin: 1.5rem auto 0;
-  color: var(--vp-c-text-2);
-  line-height: 1.9;
-}
-</style>
+<p class="home-credit">根据完整版电子文本整理 · 史铁生作品在线阅读</p>

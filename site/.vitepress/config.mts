@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { resolve } from 'node:path'
 
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1]
 const base = process.env.BASE_URL || (repoName ? `/${repoName}/` : '/')
@@ -12,11 +13,13 @@ export default defineConfig({
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-    ['link', {
-      href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap',
-      rel: 'stylesheet'
-    }],
   ],
+
+  vite: {
+    css: {
+      preprocessorOptions: {},
+    },
+  },
 
   themeConfig: {
     nav: [
